@@ -1,13 +1,20 @@
 def welcome
-  # code #welcome here
+$stdout.puts ("Welcome to the Blackjack Table")
 end
 
 def deal_card
-  # code #deal_card here
+   20.times 
+      card = deal_card
+      expect(card).to be > 0
+      expect(card).to be < 12
 end
 
 def display_card_total
-  # code #display_card_total here
+  "accepts one argument, the card total"
+  expect { display_card_total(7) }.to_not raise_error
+end
+"prints the value of the cards to the screen"
+$stdout.puts ("display_card_total(8)")
 end
 
 def prompt_user

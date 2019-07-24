@@ -9,8 +9,8 @@ describe "#deal_card" do
   it "generates a random number between 1-11" do
     20.times do 
       card = deal_card
-      expect(card).to be > 0
-      expect(card).to be < 12
+      (card).to be > 0
+      (card).to be < 12
     end
   end
 end
